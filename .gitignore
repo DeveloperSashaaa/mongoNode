@@ -11,5 +11,3 @@ build/
 *.log
 *.js.map
 *.d.ts
-.env
-config.mjs
