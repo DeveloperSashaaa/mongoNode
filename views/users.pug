@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Users
+    body
+        h1 Users List
+        ul
+          each user in users
+              li= user.name
+
+        h2 Add New User
+        form(action="/users" method="post")
+            label(for="name") Name:
+            input(type="text" name="name" required)
+            p
+            label(for="email") Email:
+            input(type="email" name="email" required)
+            p
+            button(type="submit") Add User
